@@ -15,8 +15,33 @@
 	font-variation-settings: 'slnt' 0;
 }
 
+.main {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: white;
+	scroll-behavior: smooth;
+}
+
+.container {
+	background-color: white;
+}
+
+.hero {
+	background-image: url("/pixel-background.png");
+	height: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+
+}
+
 @layer base {
 	body {
 		@apply bg-zinc-950 text-neutral-200;
+		background-color: white !important;
 	}
 }
+
