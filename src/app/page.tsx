@@ -45,13 +45,13 @@ export default function Home() {
   }
 
   return (
-    <main className="p-4 pb-10 min-h-[100vh] flex flex-col items-center container max-w-screen-lg mx-auto">
+    <>
 
   {/* Hero Section */}
   <section className="w-full flex flex-col md:flex-row items-center justify-between py-20 bg-cover bg-center hero">
     
     {/* Left Container: Heading, Description & Button */}
-    <div className="md:w-1/2 text-center md:text-left space-y-6 bg-opacity-50 bg-black p-8 rounded-lg">
+    <div className="md:w-1/2 text-center md:text-left space-y-6 bg-opacity-50 p-8 rounded-lg px-15">
       <h1 className="text-4xl font-extrabold text-white">
         Welcome to Our NFT Project
       </h1>
@@ -65,7 +65,7 @@ export default function Home() {
 
     {/* Right Container: image */}
     <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
-      <img src="/frame.png" alt="NFT Art" className="w-full max-w-[400px] rounded-xl shadow-2xl" />
+      <img src="/frame.png" alt="NFT Art" className="w-full max-w-[400px] rounded-xl" />
     </div>
 
   </section>
@@ -167,7 +167,7 @@ export default function Home() {
     </div>
   </footer>
 
-</main>
+</>
   );
 }
 

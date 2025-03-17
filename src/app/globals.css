@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: 'kemco';
+	src: url(./kemco.ttf);
+}
+
+
+
 :root {
 	line-height: 1.5;
 	font-weight: 400;
@@ -21,7 +28,8 @@
 
 body {
 	background-color: white;
-	scroll-behavior: smooth;
+	scroll-behavior: smooth !important;
+
 }
 
 .container {
@@ -30,12 +38,39 @@ body {
 
 .hero {
 	background-image: url("/pixel-background.png");
-	height: 50%;
+	height: 100%;
 	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-repeat:repeat-x;
+	background-size: contain;
 	position: relative;
+}
 
+.hero h1, #about h2, #mint h2 {
+	font-family: 'kemco', sans-serif;
+}
+
+button, .hero a {
+	background: #ffc20e !important;
+	color: #ed1c24 !important;
+	padding: 10px 20px;
+	margin-top: 10px;
+	cursor: pointer;
+	border-radius: 0 !important;
+	font-family: 'kemco', sans-serif !important;
+}
+
+button:hover, .hero a:hover {
+	background: #ffc20e;
+	box-shadow: 1px 1px 0px #c49512;
+	transform: translate(1px, 1px);
+	}
+
+
+
+@media screen and (max-width: 1122px) {
+	.hero {
+		background-size: cover;
+	}
 }
 
 @layer base {
