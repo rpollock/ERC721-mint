@@ -15,7 +15,8 @@
     "next": "^14.2.24",
     "react": "^18.3",
     "react-dom": "^18.3",
-    "thirdweb": "^5.89.0"
+    "thirdweb": "^5.89.0",
+    "ethereumjs-abi": "https://github.com/ethereumjs/ethereumjs-abi.git"
   },
   "devDependencies": {
     "@types/node": "^20",
