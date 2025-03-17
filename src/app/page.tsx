@@ -176,8 +176,8 @@ function Header() {
     <header className="flex flex-row items-center">
      
 
-      <h1 className="text-2xl md:text-6xl font-semibold md:font-bold tracking-tighter mb-6 text-zinc-100">
-        NFT Claim App
+      <h1 className="text-2xl md:text-6xl font-semibold md:font-bold tracking-tighter mb-6 text-zinc-100 hed">
+       COOL PIXEL TURTLES
       </h1>
     </header>
   );

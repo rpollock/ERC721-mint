@@ -6,6 +6,9 @@
 	font-family: 'kemco';
 	src: url(./kemco.ttf);
 }
+html {
+	scroll-behavior: smooth;
+}
 
 
 
@@ -45,8 +48,16 @@ body {
 	position: relative;
 }
 
-.hero h1, #about h2, #mint h2 {
+.hero h1, #about h2, #mint h2, .hed {
 	font-family: 'kemco', sans-serif;
+}
+
+#about h2, #mint h2 {
+	color: rgb(79, 79, 79);
+}
+
+.hed, p {
+	color: #808080;
 }
 
 button, .hero a {
@@ -57,6 +68,7 @@ button, .hero a {
 	cursor: pointer;
 	border-radius: 0 !important;
 	font-family: 'kemco', sans-serif !important;
+	scroll-behavior: smooth !important;
 }
 
 button:hover, .hero a:hover {
