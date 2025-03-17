@@ -76,7 +76,7 @@ p {
 	color: #a7a7a7 !important;
 }
 
-.btn-1 {
+.btn-1, .tw-connect-wallet {
 	background: #ffc20e !important;
 	color: #ed1c24 !important;
 	padding: 10px 20px;
@@ -87,7 +87,7 @@ p {
 	scroll-behavior: smooth !important;
 }
 
-.btn-1:hover {
+.btn-1:hover,  .tw-connect-wallet:hover{
 	background: #ffc20e;
 	box-shadow: 1px 1px 0px #c49512;
 	transform: translate(1px, 1px);
@@ -102,7 +102,7 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-	.hero h1 {
+	.hero h1 { 
 		text-shadow: 2px 2px black;
 	}
 }

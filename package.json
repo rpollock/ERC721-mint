@@ -11,12 +11,12 @@
   "dependencies": {
     "@thirdweb-dev/react": "^3.10.3",
     "@thirdweb-dev/sdk": "^4.0.60",
+    "ethereumjs-abi": "^0.6.8",
     "ethers": "^5.8.0",
     "next": "^14.2.24",
     "react": "^18.3",
     "react-dom": "^18.3",
-    "thirdweb": "^5.89.0",
-    "ethereumjs-abi": "https://github.com/ethereumjs/ethereumjs-abi.git"
+    "thirdweb": "^5.89.0"
   },
   "devDependencies": {
     "@types/node": "^20",
