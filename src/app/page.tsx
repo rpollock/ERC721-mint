@@ -58,7 +58,7 @@ export default function Home() {
       <p className="text-lg text-gray-200">
         Discover unique NFTs and mint your own today!
       </p>
-      <a href="#mint" className="mt-6 inline-block bg-blue-500 text-white text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105">
+      <a href="#mint" className="mt-6 inline-block bg-blue-500 text-white text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105 btn-1">
         Mint Now
       </a>
     </div>
@@ -75,8 +75,10 @@ export default function Home() {
   <section id="about" className="w-full text-center py-20">
     <h2 className="text-3xl font-semibold">About Us</h2>
     <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
-      We are a community-driven NFT project focused on bringing pixel art to the blockchain.
-      Our mission is to create a vibrant ecosystem for collectors and creators.
+    We're more than just pixel art on the blockchain; we're a thriving community. Cool Pixel Turtles is a project built by and for collectors and creators, dedicated to bringing the charm of pixelated turtles to the NFT world. Join us as we build a vibrant ecosystem where artistic expression and community spirit collide.
+    </p>
+    <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+    Our mission is simple: to create a fun, engaging, and community-driven NFT experience centered around the delightful world of pixel turtles. We believe in the power of pixel art and its ability to connect people. At Cool Pixel Turtles, we're building a vibrant ecosystem where collectors and creators can come together to celebrate creativity and digital ownership.
     </p>
   </section>
 
@@ -99,7 +101,7 @@ export default function Home() {
               src={contractMetadata?.image}
               className="rounded-xl"
             />
-            <h2 className="text-2xl font-semibold mt-4">
+            <h2 className="text-2xl font-semibold mt-4 hed2">
               {contractMetadata?.name}
             </h2>
             <p className="text-lg mt-2">{contractMetadata?.description}</p>
@@ -118,7 +120,7 @@ export default function Home() {
         {/* Minting Controls */}
         <div className="flex flex-row items-center justify-center my-4">
           <button
-            className="bg-black text-white px-4 py-2 rounded-md mr-4"
+            className="bg-black text-white px-4 py-2 rounded-md mr-4 btn-1"
             onClick={() => setQuantity(Math.max(1, quantity - 1))}
           >-</button>
           <input 
@@ -128,7 +130,7 @@ export default function Home() {
             className="w-10 text-center border border-gray-300 rounded-md bg-black text-white"
           />
           <button
-            className="bg-black text-white px-4 py-2 rounded-md ml-4"
+            className="bg-black text-white px-4 py-2 rounded-md ml-4 btn-1"
             onClick={() => setQuantity(quantity + 1)}
           >+</button>
         </div>
@@ -144,27 +146,19 @@ export default function Home() {
             alert("NFT Claimed!");
             setQuantity(1);
           }}
+          className="btn-1"
         >
           {`Claim NFT (${getPrice(quantity)} ETH)`}
         </TransactionButton>
+        <a href="stakinglink" className="btn-1">Stake NFT</a>
       </div>
     </div>
   </section>
 
   {/* Footer Section */}
   <footer className="w-full text-center py-10 border-t border-gray-700 mt-10">
-    <p className="text-lg text-gray-400">© 2025 NFT Project | All Rights Reserved</p>
-    <div className="flex justify-center mt-4 space-x-6">
-      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-        <img src="/twitter-icon.png" alt="Twitter" className="w-6 h-6" />
-      </a>
-      <a href="https://discord.com" target="_blank" rel="noopener noreferrer">
-        <img src="/discord-icon.png" alt="Discord" className="w-6 h-6" />
-      </a>
-      <a href="https://opensea.io" target="_blank" rel="noopener noreferrer">
-        <img src="/opensea-icon.png" alt="OpenSea" className="w-6 h-6" />
-      </a>
-    </div>
+    <p className="text-lg text-gray-400">© 2025 COOL PIXEL TURTLES | All Rights Reserved</p>
+   
   </footer>
 
 </>

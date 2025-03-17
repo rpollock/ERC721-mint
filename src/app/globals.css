@@ -52,15 +52,31 @@ body {
 	font-family: 'kemco', sans-serif;
 }
 
-#about h2, #mint h2 {
-	color: rgb(79, 79, 79);
+#about h2 {
+	color: #ed1c24;
 }
 
-.hed, p {
-	color: #808080;
+#mint h2 {
+	color: #64dd16;
 }
 
-button, .hero a {
+.hed {
+	color: #2196f3;
+}
+
+.hed2 {
+	color: #d500f9 !important;
+}
+
+.hero p {
+	color: white !important;
+}
+
+p {
+	color: #a7a7a7 !important;
+}
+
+.btn-1 {
 	background: #ffc20e !important;
 	color: #ed1c24 !important;
 	padding: 10px 20px;
@@ -71,7 +87,7 @@ button, .hero a {
 	scroll-behavior: smooth !important;
 }
 
-button:hover, .hero a:hover {
+.btn-1:hover {
 	background: #ffc20e;
 	box-shadow: 1px 1px 0px #c49512;
 	transform: translate(1px, 1px);
@@ -84,6 +100,13 @@ button:hover, .hero a:hover {
 		background-size: cover;
 	}
 }
+
+@media screen and (max-width: 768px) {
+	.hero h1 {
+		text-shadow: 2px 2px black;
+	}
+}
+
 
 @layer base {
 	body {
