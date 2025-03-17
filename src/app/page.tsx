@@ -6,6 +6,7 @@ import { sepolia } from "thirdweb/chains";
 import { getContractMetadata } from "thirdweb/extensions/common";
 import { claimTo, getActiveClaimCondition, getTotalClaimedSupply, nextTokenIdToMint } from "thirdweb/extensions/erc721";
 import { useState } from "react";
+import Image from 'next/image'
 
 
 export default function Home() {
@@ -65,8 +66,9 @@ export default function Home() {
 
     {/* Right Container: image */}
     <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
-      <img src="/frame.png" alt="NFT Art" className="w-full max-w-[400px] rounded-xl" />
+      <Image src="/frame.png" alt="NFT Art" className="w-full max-w-[400px] rounded-xl"/>
     </div>
+    
 
   </section>
 
@@ -75,10 +77,10 @@ export default function Home() {
   <section id="about" className="w-full text-center py-20">
     <h2 className="text-3xl font-semibold">About Us</h2>
     <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
-    We're more than just pixel art on the blockchain; we're a thriving community. Cool Pixel Turtles is a project built by and for collectors and creators, dedicated to bringing the charm of pixelated turtles to the NFT world. Join us as we build a vibrant ecosystem where artistic expression and community spirit collide.
+    We are more than just pixel art on the blockchain; we are a thriving community. Cool Pixel Turtles is a project built by and for collectors and creators, dedicated to bringing the charm of pixelated turtles to the NFT world. Join us as we build a vibrant ecosystem where artistic expression and community spirit collide.
     </p>
     <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
-    Our mission is simple: to create a fun, engaging, and community-driven NFT experience centered around the delightful world of pixel turtles. We believe in the power of pixel art and its ability to connect people. At Cool Pixel Turtles, we're building a vibrant ecosystem where collectors and creators can come together to celebrate creativity and digital ownership.
+    Our mission is simple: to create a fun, engaging, and community-driven NFT experience centered around the delightful world of pixel turtles. We believe in the power of pixel art and its ability to connect people. At Cool Pixel Turtles, we are building a vibrant ecosystem where collectors and creators can come together to celebrate creativity and digital ownership.
     </p>
   </section>
 
